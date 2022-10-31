@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".usuarioActivity">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Usuario"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etidentificacion"
+            android:layout_width="164dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:hint="identificacion"
+            android:textSize="25dp" />
+        <Button
+            android:id="@+id/btBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="buscar"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/etprofesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="profesion" />
+
+    <EditText
+        android:id="@+id/etempresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="empresa" />
+
+    <EditText
+        android:id="@+id/etsalario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:hint="salario" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etingresosextras"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:hint="ingresos extras" />
+
+        <EditText
+            android:id="@+id/etgastos"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:ems="10"
+            android:textSize="25dp"
+            android:inputType="textPersonName"
+            android:hint="gastos" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btguardar"
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="guardar"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btconsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="consultar"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btanular"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="anular"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btcancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="cancelar"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btregresar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="salir"
+        android:layout_marginTop="10dp"
+        android:text="regresar"
+        android:textSize="25dp" />
+
+
+</LinearLayout>
